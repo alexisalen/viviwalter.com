@@ -1,0 +1,88 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+
+}
+
+/*INDEX*/
+/*-----*/
+
+nav {
+    position: relative;
+    margin: auto;
+    width: 980px;
+    height: 84px;
+    /*background: rgba(255, 255, 0, .5);*/
+}
+
+nav ul {
+    position: absolute;
+    top: 28px;
+    left: 0px;
+    width: 700px;
+    height: 27px;
+    /*background: rgba(255, 0, 255, .5);*/
+}
+
+nav ul li {
+    float:left;
+    width: 125px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 16px;
+}
+
+nav a {
+    color: #A0A0A0;
+    transition: all 0.8s ease 0s;
+}
+
+nav a:active {
+    color:black;
+}
+
+nav a:hover {
+    color: black;
+}
+
+#logo {
+    position: relative;
+    top: 28px;
+    float: right;
+    width: 280px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 16px;
+    /*background: rgba(0,50,255, .5);*/
+}
+
+#hero {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 482px;
+}
+
+#hero img {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+/*INDEX END*/
+/*---------*/
+
+
+/*VIVI*/
+/*----*/
+
+
+
+/*VIVI END*/
+/*--------*/
