@@ -80,11 +80,12 @@ nav a:active {
 #line {
     position: relative;
     width: 100%;
-    border-top: 1.4px solid #A0A0A0;    
+    border-top: 1.4px solid #A0A0A0;
     box-shadow: 0px 1px 2px 1px rgb(197, 197, 197);
     -webkit-box-shadow: 0px 1px 2px 1px rgb(197, 197, 197);
     -moz-box-shadow: 0px 1px 2px 1px rgb(197, 197, 197);
 }
+
 /*INDEX END*/
 /*---------*/
 
@@ -138,8 +139,6 @@ nav a:active {
     font-size: 14px;
 }
 
-
-
 /*#profile ul p {
 width: 50%;
 padding: 2%;
@@ -148,6 +147,61 @@ padding: 2%;
 /*VIVI END*/
 /*--------*/
 
+
+/*GALERIA*/
+/*-------*/
+
+
+#galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 25vw);
+    grid-gap: 2px;
+    margin-top: 1px;
+    /*background: rgba(0,50,255, .5);*/
+}
+
+.galeria_img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .7s ease;
+    -webkit-transition: .7s ease;
+    -moz-transition: .7s ease;
+    -ms-transition: .7s ease;
+    -o-transition: .7s ease;
+    /*background: rgba(5, 0, 3, 0.5);*/
+}
+
+.galeria_img:hover {
+    opacity: 0.3;
+    transition: .7s ease;
+    -webkit-transition: .7s ease;
+    -moz-transition: .7s ease;
+    -ms-transition: .7s ease;
+    -o-transition: .7s ease;
+}
+
+.epigrafe {
+    transition: .5s ease;
+    opacity: 0;
+    /*background: rgba(67, 226, 27, 0.5);*/
+}
+
+figure:hover .epigrafe {
+    opacity: 1;
+} 
+
+figcaption {
+    position: relative;
+    text-align: center;
+    top: -55%;
+    font-size: 30px;
+    pointer-events:none;
+}
+
+/*GALERIA END*/
+/*-----------*/
 
 
 /*CONTACTO*/
@@ -177,12 +231,12 @@ padding: 2%;
     padding: 12px 20px;
     margin-left: 25px;
     margin-bottom: 22px;
-    border: 1px solid #A0A0A0;   
+    border: 1px solid #A0A0A0;
     border-radius: 10px;
-    -webkit-border-radius:10px;
-    -moz-border-radius:10px;
-    -ms-border-radius:10px;
-    -o-border-radius:10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 #contacto form textarea {
@@ -191,7 +245,7 @@ padding: 2%;
     right: 25px;
     padding: 12px 20px;
     width: 45%;
-    border: 1px solid #A0A0A0;   
+    border: 1px solid #A0A0A0;
     border-radius: 10px;
     outline: none;
     resize: none;
@@ -204,8 +258,8 @@ padding: 2%;
     width: 80px;
     height: 20px;
     border: 1px solid #A0A0A0;
-    margin-top:10px;
-    background-color: white;   
+    margin-top: 10px;
+    background-color: white;
     transition: 0.5s;
     border-radius: 10px;
     margin-bottom: 12px;
