@@ -67,14 +67,14 @@ nav a:active {
 #hero {
     position: relative;
     margin: auto;
-    width: 100%;
-    height: 482px;
+    width: 100vw;
+    height: 50vh;
+    /*height: 482px;*/
+    background-color: aquamarine;
 }
 
 #hero img {
-    top: 0px;
-    left: 0px;
-    width: 100%;
+    width: 100vw;
 }
 
 #line {
@@ -139,11 +139,6 @@ nav a:active {
     font-size: 14px;
 }
 
-/*#profile ul p {
-width: 50%;
-padding: 2%;
-}
-
 /*VIVI END*/
 /*--------*/
 
@@ -190,14 +185,14 @@ padding: 2%;
 
 figure:hover .epigrafe {
     opacity: 1;
-} 
+}
 
 figcaption {
     position: relative;
     text-align: center;
     top: -55%;
     font-size: 30px;
-    pointer-events:none;
+    pointer-events: none;
 }
 
 /*GALERIA END*/
@@ -288,3 +283,145 @@ figcaption {
 
 /*CONTACTO END*/
 /*------------*/
+
+/*BREAKPOINTS*/
+
+
+@media screen and (max-width: 480px) {
+    nav {
+        width: 100%;
+        height: 126px;
+        /*background: rgba(255, 255, 0, .5);*/
+    }
+
+    nav ul {
+        position: relative;
+        margin: auto;
+        top: 75px;
+        left: 0px;
+        width: 100%;
+        /*background: rgba(255, 0, 255, .5);*/
+    }
+
+    nav ul li {
+        float: left;
+        left: 0;
+        width: 22.5%;
+    }
+
+    #logo {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin: auto;
+        float: none;
+        width: 280px;
+        line-height: 28px;
+        /*background: rgba(0,50,255, .5);*/
+    }
+    
+    #hero {
+        /*position: relative;
+        margin: auto;
+        width: 100%;
+        /*height: 482px;*/
+        /*min-height: 300px;*/
+    }
+
+    #hero img {
+        /*display: none;
+        top: 0px;
+        left: 0px;
+        width: 100%;*/
+    }
+}
+
+
+
+@media screen and (min-width: 481.1px) and (max-width:576px) {
+    nav {
+        width: 100%;
+        height: 126px;
+        /*background: rgba(255, 255, 0, .5);*/
+    }
+
+    nav ul {
+        position: relative;
+        margin: auto;
+        top: 75px;
+        left: 0px;
+        width: 100%;
+        /*background: rgba(255, 0, 255, .5);*/
+    }
+
+    nav ul li {
+        float: left;
+        width: 25%;
+    }
+
+    #logo {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin: auto;
+        float: none;
+        width: 280px;
+        line-height: 28px;
+        /*background: rgba(0,50,255, .5);*/
+    }
+}
+
+@media screen and (min-width:576.1px) and (max-width:800px) {
+    nav {
+        width: 100%;
+        height: 126px;
+        /*background: rgba(255, 255, 0, .5);*/
+    }
+
+    nav ul {
+        position: relative;
+        margin: auto;
+        top: 75px;
+        left: 0px;
+        width: 100%;
+        /*background: rgba(255, 0, 255, .5);*/
+    }
+
+    nav ul li {
+        float: left;
+        width: 25%;
+    }
+
+    #logo {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin: auto;
+        float: none;
+        width: 280px;
+        line-height: 28px;
+        /*background: rgba(0,50,255, .5);*/
+    }
+}
+
+@media screen and (min-width:800.1px) and (max-width:992px) {
+    nav {
+        width: 90%;
+        height: 84px;
+        /*background: rgba(255, 255, 0, .5);*/
+    }
+}
+
+@media screen and (min-width:992.1px) and (max-width: 1250px) {
+    nav {
+        width: 75%;
+        height: 84px;
+        /*background: rgba(255, 255, 0, .5);*/
+    }
+
+
+
+    @media screen and (min-width:1250.1px) {}
+
+
+    /*END-BREAKPOINTS*/
