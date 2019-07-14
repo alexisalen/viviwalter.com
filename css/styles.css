@@ -12,6 +12,7 @@
 /*INDEX*/
 /*-----*/
 
+
 nav {
     position: relative;
     margin: auto;
@@ -50,8 +51,6 @@ nav a:active {
     color: black;
     font-weight: 500;
 }
-
-
 
 #logo {
     position: relative;
@@ -147,12 +146,13 @@ nav a:active {
 /*-------*/
 
 
-#galeria {
+.galeria {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 25vw);
     grid-gap: 2px;
     margin-top: 1px;
+    height: auto;
     /*background: rgba(0,50,255, .5);*/
 }
 
@@ -284,6 +284,40 @@ figcaption {
 /*CONTACTO END*/
 /*------------*/
 
+
+/*RESONANCIAS----*/
+/*---------------*/
+
+.gal_intro {
+    position: relative;
+    margin: auto;
+    width: 40%;
+    padding: 3%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.gal_intro p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.gal_intro cite {
+    font-weight: 400;
+    float:right;
+}
+
+#gal_res {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 25vw);
+    /*background: rgba(0,50,255, .5);*/
+}
+
+
+/*RESONANCIAS END*/
+/*---------------*/
+
+
 /*BREAKPOINTS*/
 
 
@@ -334,6 +368,24 @@ figcaption {
         left: 0px;
         width: 100%;*/
     }
+
+    .gal_intro {
+        width: 90%;
+    }
+
+    .galeria {
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 30%);
+        grid-gap: 2px;
+        margin-top: 2px;
+        /*background: rgba(0,50,255, .5);*/
+    }
+
+    #gal_res {
+        grid-template-columns: none;
+        grid-template-rows: repeat(6, 10%);
+        /*background: rgba(0,50,255, .5);*/
+    }
 }
 
 
@@ -369,6 +421,24 @@ figcaption {
         line-height: 28px;
         /*background: rgba(0,50,255, .5);*/
     }
+
+    .gal_intro {
+        width: 80%;
+    }
+
+    .galeria {
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 30%);
+        grid-gap: 2px;
+        margin-top: 2px;
+        /*background: rgba(0,50,255, .5);*/
+    }
+
+    #gal_res {
+        grid-template-columns: none;
+        grid-template-rows: repeat(6, 10%);
+        /*background: rgba(0,50,255, .5);*/
+    }
 }
 
 @media screen and (min-width:576.1px) and (max-width:800px) {
@@ -402,6 +472,20 @@ figcaption {
         line-height: 28px;
         /*background: rgba(0,50,255, .5);*/
     }
+
+    .gal_intro {
+        width: 70%;
+    }
+
+    .galeria {
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 30%);
+        grid-gap: 2px;
+        margin-top: 2px;
+        /*background: rgba(0,50,255, .5);*/
+    }
+
+  
 }
 
 @media screen and (min-width:800.1px) and (max-width:992px) {
@@ -410,6 +494,12 @@ figcaption {
         height: 84px;
         /*background: rgba(255, 255, 0, .5);*/
     }
+    .gal_intro {
+        width: 60%;
+    }
+
+
+
 }
 
 @media screen and (min-width:992.1px) and (max-width: 1250px) {
@@ -419,9 +509,11 @@ figcaption {
         /*background: rgba(255, 255, 0, .5);*/
     }
 
+    .gal_intro {
+        width: 50%;
+    }
 
-
-    @media screen and (min-width:1250.1px) {}
+ @media screen and (min-width:1250.1px) {}
 
 
     /*END-BREAKPOINTS*/
