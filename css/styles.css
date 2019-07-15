@@ -69,11 +69,15 @@ nav a:active {
     width: 100vw;
     height: 50vh;
     /*height: 482px;*/
-    background-color: aquamarine;
+    /*background-color: aquamarine;*/
+    /*background-image: url("img\cabiro_hero_low.jpg");
+    background-repeat: no-repeat;
+    min-height: 100%;*/
 }
 
 #hero img {
     width: 100vw;
+    min-height: 100%;
 }
 
 #line {
@@ -397,6 +401,12 @@ a:active {
         width: 100%;*/
     }
 
+    #hero img {
+        position: relative;
+        left: -50%;
+        width: 200vw;
+    }
+
     .gal_intro {
         width: 90%;
     }
@@ -511,6 +521,12 @@ a:active {
     nav ul li {
         float: left;
         width: 25%;
+    }
+
+    #hero img {
+        position: relative;
+        left: -50%;
+        width: 200vw;
     }
 
     #logo {
@@ -633,6 +649,12 @@ a:active {
     nav ul li {
         float: left;
         width: 25%;
+    }
+
+    #hero img {
+        position: relative;
+        left: -25%;
+        width: 150vw;
     }
 
     #logo {
