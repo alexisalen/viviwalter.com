@@ -22,12 +22,12 @@
     <meta name="keywords" content="photography, digital art, Carl Jung, gallery" />
     <meta name="developer" content="Alexis Walter">
 
-    <link rel="shortcut icon" type="image/png" href="img\favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="/src/img/favicon.png" />
 
     <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
 
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="..\src\css\styles.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap" rel="stylesheet">
 
     <title>Vivi Walter fotografía</title>
@@ -39,10 +39,10 @@
     <!---------->
     <nav>
         <ul>
-            <li><a href="index.html">INICIO</a></li>
-            <li><a href="galeria.html">GALERIA</a></li>
-            <li><a href="vivi.html">VIVI</a></li>
-            <li><a href="contacto.html">CONTACTO</a></li>
+            <li><a href="..\index.html">INICIO</a></li>
+            <li><a href="..\pages\galeria.html">GALERIA</a></li>
+            <li><a href="..\pages\vivi.html">VIVI</a></li>
+            <li><a href="..\pages\contacto.html">CONTACTO</a></li>
         </ul>
 
         <div id="logo">
@@ -59,27 +59,23 @@
     <!-------->
     <!--Line-->
 
-    <!--Galeria-->
+    <!--Contacto-->
     <!-------->
-    <div class="galeria">
-        <figure>
-            <a href="gal_resonancias.html"><img class="galeria_img" src="img\resonancias\resonancias_6.jpg"
-                    alt="Resonancias"></a>
-            <figcaption class="epigrafe">RESONANCIAS</figcaption>
-        </figure>
-        <figure>
-            <a href="gal_vislumbres.html"><img class="galeria_img" src="img\vislumbres\vislumbres_5.jpg"
-                    alt="Vislumbres"></a>
-            <figcaption class="epigrafe">VISLUMBRES</figcaption>
-        </figure>
-        <figure>
-            <a href="gal_reflejos.html"><img class="galeria_img" src="img\reflejos\reflejos_4.jpg" alt="Reflejos"></a>
-            <figcaption class="epigrafe">REFLEJOS</figcaption>
-        </figure>
+    <div id="contacto">
+        <form action="" method="POST">
+            <input type="text" placeholder="Nombre" name="Nombre">
+            <input type="email" placeholder="Email" name="Email">
+            <input type="text" placeholder="Asunto" name="Asunto">
+            <textarea placeholder="Mensaje" cols="1"" rows=" 9" id="mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
     </div>
     <!------------>
-    <!--Galeria end-->
+    <!--Contacto end-->
 
+    <footer>
+        <a href="vivisdew@hotmail.com">vivisdew@hotmail.com</a>
+    </footer>
 
 </body>
 
