@@ -3,8 +3,12 @@
     padding: 0%;
     text-decoration: none;
     list-style: none;
-    font-family: sans-serif;
     scroll-behavior: smooth;
+}
+
+body {
+    font-size: 16px;
+    font-family: sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 }
@@ -34,10 +38,11 @@ nav ul {
 
 nav ul li {
     float: left;
-    width: 125px;
+    width: 7.8125em; /* 125px / 16 px */
+    /*padding: 0 2em;*/
     line-height: 28px;
     text-align: center;
-    font-size: 16px;
+    font-size: 1em; /* 16px / 16 px */
 }
 
 nav a {
@@ -61,7 +66,7 @@ nav a:active {
     width: 280px;
     line-height: 28px;
     text-align: center;
-    font-size: 16px;
+    /*font-size: 1.5em !important; /* 24 px / 16 px */
     /*background: rgba(0,50,255, .5);*/
 }
 
@@ -104,7 +109,7 @@ nav a:active {
     margin: auto;
     margin-top: 50px;
     width: 70%;
-    height: 100vh;
+    height: auto;
     /*background: rgba(0,50,255, .5);*/
 }
 
@@ -121,15 +126,15 @@ nav a:active {
 #profile ul li p {
     text-align: center;
     padding: 20px;
-    line-height: 30px;
-    font-size: 16px;
+    line-height: 1.875em;
+    font-size: 1em; /* 16px / 16 px */
     font-weight: 300;
 }
 
 #profile ul li h2 {
     text-align: left;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.125em; /* 18px / 16 px */
     margin-top: 0px;
     margin-bottom: 10px;
 }
@@ -137,7 +142,7 @@ nav a:active {
 #profile ul li li {
     width: 100%;
     line-height: 25px;
-    font-size: 14px;
+    font-size: 0.875em; /* 14px / 16 px */
 }
 
 /*VIVI END*/
@@ -193,7 +198,7 @@ figcaption {
     position: relative;
     text-align: center;
     top: -55%;
-    font-size: 30px;
+    font-size: 1.875em; /* 30px / 16 px */
     pointer-events: none;
 }
 
@@ -225,9 +230,11 @@ figcaption {
     position: relative;
     display: block;
     width: 38%;
-    padding: 12px;
+    padding: 1em;
     margin-left: 25px;
     margin-bottom: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7em;
     border: 1px solid #A0A0A0;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -240,8 +247,10 @@ figcaption {
     position: absolute;
     top: 0;
     right: 25px;
-    padding: 12px;
+    padding: 1.3em;
     width: 48%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7em;
     border: 1px solid #A0A0A0;
     border-radius: 10px;
     outline: none;
@@ -296,11 +305,11 @@ figcaption {
     width: 40%;
     padding: 3%;
     text-align: center;
-    line-height: 30px;
+    line-height: 1.875em; /* 30px / 16px */
 }
 
 .gal_intro p {
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 300;
 }
 
@@ -316,6 +325,7 @@ figcaption {
 }
 
 
+
 /*RESONANCIAS+VISLUMBRES+REFLEJOS END*/
 /*-----------------------------------*/
 
@@ -324,17 +334,16 @@ figcaption {
 /*--------------*/
 
 footer {
-    position: relative;
-    margin: auto;
-    width: 75%;
-    height: auto;
+    display: relative;
+    text-align: center;
+    width: 100%;
+    height: 1.5em;
     border-top: 1px solid rgb(0, 0, 0);
     /*background: rgba(0,50,255, .5);*/
 }
 
+
 footer p {
-    width: 100%;
-    margin: auto;
     font-weight: 300;
     /*background: rgba(165, 37, 20, 0.63);*/
 }
@@ -344,10 +353,12 @@ a:visited,
 a:link,
 a:active {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1em; /* 16px / 16 px */
     color: #A0A0A0;
     font-weight: 300;
 }
+
+
 
 /*----FOOTER-------*/
 /*----FOOTER END---*/
@@ -356,6 +367,10 @@ a:active {
 /*BREAKPOINTS*/
 
 @media screen and (max-width: 480px) {
+    body {
+        font-size: 0.94em;
+    }
+    
     nav {
         width: 100%;
         height: 126px;
@@ -446,11 +461,6 @@ a:active {
     #profile ul li p {
         padding: 8px;
         margin-bottom: 30px;
-        font-size: 15px;
-    }
-
-    #profile ul li li {
-        font-size: 12px;
     }
 
     #contacto {
@@ -483,7 +493,7 @@ a:active {
         display: block;
         margin: 6%;
         right: 0px;
-        width: 80%;
+        width: 79%;
         /*resize: none;*/
     }
 
@@ -497,9 +507,9 @@ a:active {
         margin-bottom: 0;
     }
 
-    footer {
+   /* footer {
         width: 90%;
-    }
+    }*/
 }
 
 
@@ -613,7 +623,7 @@ a:active {
         display: block;
         margin: 6%;
         right: 0px;
-        width: 80%;
+        width: 79%;
         /*resize: none;*/
     }
 
@@ -627,9 +637,9 @@ a:active {
         margin-bottom: 0;
     }
 
-    footer {
+    /*footer {
         width: 90%;
-    }
+    }*/
 }
 
 @media screen and (min-width:576.1px) and (max-width:800px) {
@@ -685,7 +695,7 @@ a:active {
     .gal_sub {
         grid-template-columns: none;
         grid-template-rows: repeat(6, 15%);
-        background: rgba(0, 50, 255, .5);
+        /*background: rgba(0, 50, 255, .5);*/
         height: auto;
     }
 
@@ -713,7 +723,7 @@ a:active {
     #profile ul li h2 {
         text-align: left;
         font-weight: 500;
-        font-size: 18px;
+        /*font-size: 18px;*/
         margin-top: 0px;
         margin-bottom: 10px;
     }
@@ -721,7 +731,7 @@ a:active {
     #profile ul li li {
         width: 100%;
         line-height: 25px;
-        font-size: 14px;
+        /*font-size: 14px;*/
     }
 
 
@@ -755,7 +765,7 @@ a:active {
         display: block;
         margin: 6%;
         right: 0px;
-        width: 80%;
+        width: 79%;
         /*resize: none;*/
     }
 
@@ -769,9 +779,9 @@ a:active {
         margin-bottom: 0;
     }
 
-    footer {
+    /*footer {
         width: 90%;
-    }
+    }*/
 
 }
 
@@ -794,9 +804,9 @@ a:active {
         width: 43%;
     }
 
-    footer {
+    /*footer {
         width: 80%;
-    }
+    }*/
 }
 
 @media screen and (min-width:992.1px) and (max-width: 1350px) {
@@ -819,7 +829,7 @@ a:active {
 
 }
 
-@media screen and (max-height: 700px) {
+@media screen and (max-height: 600px) {
     footer {
         display: none;
     }
