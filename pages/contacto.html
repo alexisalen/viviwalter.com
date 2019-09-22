@@ -22,12 +22,13 @@
     <meta name="keywords" content="photography, digital art, Carl Jung, gallery" />
     <meta name="developer" content="Alexis Walter">
 
-    <link rel="shortcut icon" type="image/png" href="/src/img/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="../src/img/favicon.png" />
 
     <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
 
     <link rel="stylesheet" type="text/css" href="..\src\css\styles.css">
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap" rel="stylesheet">
 
     <title>Vivi Walter fotografía</title>
@@ -60,26 +61,28 @@
     <!--Line-->
 
     <!--Contacto-->
-    <!-------->
+    <!----action="https://formsubmit.co/vivisdew@hotmail.com"---->
     <div id="contacto">
-        <form action="https://formsubmit.co/vivisdew@hotmail.com" method="POST" />
-            <input type="text" placeholder="Nombre" name="Nombre">
-            <input type="email" placeholder="Email" name="Email">
-            <input type="text" placeholder="Asunto" name="Asunto">
+        <form method="POST" id="formulario" onsubmit="return false;">
+            <input type="text" placeholder="Nombre" name="nombre" id="nombre">
+            <input type="email" placeholder="Email" name="email" id="email">
+            <input type="text" placeholder="Asunto" name="asunto" id="asunto">
             <textarea placeholder="Mensaje" cols="1"" rows=" 9" id="mensaje"></textarea>
+            <span class="error" id="error"></span>
 
             <input type="hidden" name="_captcha" value="false">
             
             <button type="submit">Enviar</button>
-
         </form>
     </div>
+
+    <script src="../src/js/validate.js"></script>
     <!------------>
     <!--Contacto end-->
 
-    <footer>
+    <!--<footer>
         <a href="mailto:vivisdew@hotmail.com">vivisdew@hotmail.com</a>
-    </footer>
+    </footer>-->
 
 </form>
 </body>
