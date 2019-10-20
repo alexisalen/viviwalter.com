@@ -30,6 +30,12 @@
     <link rel="stylesheet" type="text/css" href="..\src\css\styles.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap" rel="stylesheet">
 
+    <script src="..\src\js\jquery-3.4.1.min.js"></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js'></script>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css'>
+
     <title>Vivi Walter fotografía</title>
 </head>
 
@@ -75,32 +81,32 @@
     <!-------->
     <div class="galeria gal_sub">
         <figure>
-            <a href="..\src\img\resonancias\resonancias_1.jpg"><img class="galeria_img" src="..\src\img\resonancias\resonancias_1.jpg"
+            <a class="modal" href="..\src\img\resonancias\resonancias_1.jpg"><img class="galeria_img" src="..\src\img\resonancias\resonancias_1.jpg"
                     alt="Resonancias"></a>
             <figcaption class="epigrafe">El Anacoreta</figcaption>
         </figure>
         <figure>
-            <a href="..\src\img\resonancias\resonancias_2.jpg"><img class="galeria_img" src="..\src\img\resonancias\resonancias_2.jpg"
+            <a class="modal" href="..\src\img\resonancias\resonancias_2.jpg"><img class="galeria_img" src="..\src\img\resonancias\resonancias_2.jpg"
                     alt="Vislumbres"></a>
             <figcaption class="epigrafe">El árbol de la vida</figcaption>
         </figure>
         <figure>
-            <a href="..\src\img\resonancias\resonancias_3.jpg"><img class="galeria_img" src="..\src\img\resonancias\resonancias_3.jpg"
+            <a class="modal" href="..\src\img\resonancias\resonancias_3.jpg"><img class="galeria_img" src="..\src\img\resonancias\resonancias_3.jpg"
                     alt="Reflejos"></a>
             <figcaption class="epigrafe">El camino</figcaption>
         </figure>
         <figure>
-            <a href="..\src\img\resonancias\resonancias_4.jpg"><img class="galeria_img" src="..\src\img\resonancias\resonancias_4.jpg"
+            <a class="modal" href="..\src\img\resonancias\resonancias_4.jpg"><img class="galeria_img" src="..\src\img\resonancias\resonancias_4.jpg"
                     alt="Resonancias"></a>
             <figcaption class="epigrafe">Sol de Izdubar</figcaption>
         </figure>
         <figure>
-            <a href="..\src\img\resonancias\resonancias_5.jpg"><img class="galeria_img" src="..\src\img\resonancias\resonancias_5.jpg"
+            <a class="modal" href="..\src\img\resonancias\resonancias_5.jpg"><img class="galeria_img" src="..\src\img\resonancias\resonancias_5.jpg"
                     alt="Vislumbres"></a>
             <figcaption class="epigrafe">Sin título</figcaption>
         </figure>
         <figure>
-            <a href="..\src\img\resonancias\resonancias_6.jpg"><img class="galeria_img" src="..\src\img\resonancias\resonancias_6.jpg"
+            <a class="modal" ref="..\src\img\resonancias\resonancias_6.jpg"><img class="galeria_img" src="..\src\img\resonancias\resonancias_6.jpg"
                     alt="Reflejos"></a>
             <figcaption class="epigrafe">Prepensar y amor</figcaption>
         </figure>
@@ -112,6 +118,42 @@
         <a href="mailto:vivisdew@hotmail.com">vivisdew@hotmail.com</a>
     </footer>
 
+    <script id="rendered-js">
+            $('.modal').magnificPopup({
+                type: 'iframe',
+    
+                gallery: {
+                    enabled: true, // set to true to enable gallery
+    
+                    preload: [0, 1], // read about this option in next Lazy-loading section
+    
+                    navigateByImgClick: true,
+    
+                    arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>', // markup of an arrow button
+    
+                    tPrev: 'Previous (Left arrow key)', // title for left button
+                    tNext: 'Next (Right arrow key)', // title for right button
+                    tCounter: '<span class="mfp-counter">%curr% of %total%</span>' // markup of counter
+                },
+    
+                iframe: {
+                    markup: 
+                        '<div class="mfp-iframe-scaler">' +
+                        '<div class="mfp-close"></div>' +
+                        '<iframe class="mfp-iframe modal" frameborder="0" allowfullscreen></iframe>' +
+                        '<div class="mfp-title">Some caption</div>' +
+                        '</div>'
+    
+                },
+    
+                callbacks: {
+                    markupParse: function (template, values, item) {
+                        values.title = item.el.attr('title');
+                    }
+                }
+            });
+            //# sourceURL=pen.js
+        </script>
 
 </body>
 
